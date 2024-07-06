@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos de Temperatura</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>Temperaturas Registradas</h1>
+
+    <div class="calendar">
+        <h2>Selecionar Data</h2>
+        <div class="calendar-input">
+            <input type="date" id="datePicker">
+            <label for="datePicker"><i class="fas fa-calendar-alt"></i></label>
+        </div>
+    </div>
+    
+    <div class="temperature-charts">
+        <div class="row">
+            <div class="temperature-chart">
+                <canvas id="field1Chart" width="400" height="200"></canvas>
+                <h2>Temperatura Média</h2>
+            </div>
+
+            <div class="temperature-chart">
+                <canvas id="field2Chart" width="400" height="200"></canvas>
+                <h2>Temperatura Minima</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="temperature-chart">
+                <canvas id="field3Chart" width="400" height="200"></canvas>
+                <h2>Temepratura Máxima</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>Conecte-se comigo:</p>
+            <div class="social-icons">
+                <a href="https://github.com/joaopdeveloper" target="_blank" class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="#000">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.303 3.438 9.801 8.206 11.414.6.11.793-.26.793-.577l-.011-2.025c-3.342.726-4.042-1.606-4.042-1.606-.546-1.384-1.332-1.754-1.332-1.754-1.09-.745.083-.73.083-.73 1.204.086 1.837 1.236 1.837 1.236 1.07 1.833 2.808 1.304 3.493.997.107-.772.417-1.303.76-1.604-2.665-.295-5.466-1.332-5.466-5.92 0-1.308.468-2.377 1.236-3.218-.125-.296-.536-1.524.117-3.176 0 0 1.008-.322 3.3 1.23a11.487 11.487 0 0 1 3-.406c1.018.003 2.04.137 3 .406 2.29-1.552 3.298-1.23 3.298-1.23.655 1.652.244 2.88.119 3.176.77.841 1.234 1.91 1.234 3.218 0 4.6-2.804 5.62-5.476 5.91.43.371.812 1.101.812 2.22l-.013 3.297c0 .32.19.693.8.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/joao-dev-starter/" target="_blank" class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40" fill="#0000ff ">
+                        <path d="M5 3c1.5 0 2.762.762 3.5 2h.063L8 7v10h5v-5.563c0-1.5 2-2.75 2-2.75s2 .25 2 2.75V17H21V7l-3.562-2H18.5c.74-1.238 2-2 3.5-2h-7zM7 5h.063c.825 0 1.75.588 2.45 1.262C9.55 6.95 9.85 7 10 7h4c.15 0 .45-.05.487-.738C14.187 5.588 15.112 5 16 5h.063L17 7V17h-3v-5.563c0-1.5-2-2.75-2-2.75s-2 .25-2 2.75V17H6V7l1-2H7zm-2 15h3V9H5v11zm4 0h3V9H9v11zm-1.5-12.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm8 7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
